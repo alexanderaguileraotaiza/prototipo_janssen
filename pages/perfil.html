@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Janssen Maquinaria | Perfil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS general -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <!-- js general -->
+  <link rel="stylesheet" href="../js/general.js" />
+
+  <!-- CSS del perfil -->
+  <link rel="stylesheet" href="../css/perfil.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img src="../assets/img/Janssen MAQ.png" class="login-logo" alt="Janssen Maquinaria" />
+
+      <a class="navbar-brand d-flex align-items-center" href="home.html">Janssen Maquinarias</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="perfil.html">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="maquinarias.html">Maquinarias</a></li>
+          <li class="nav-item"><a class="nav-link" href="mantencion.html">Solicitud Mantención</a></li>
+          <li class="nav-item"><a class="nav-link" href="repuestos.html">Repuestos</a></li>
+        </ul>
+
+        <span class="navbar-text text-white">
+          Constructora Andes | 76.123.456-7
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="container d-flex justify-content-center align-items-center py-5 flex-grow-1">
+    <div class="perfil-card">
+
+      <!-- HEADER PERFIL -->
+      <div class="perfil-header">
+        <div class="d-flex align-items-center gap-3">
+          <img src="../assets/img/Janssen MAQ.png" class="perfil-avatar" alt="Logo empresa" />
+
+          <div class="flex-grow-1">
+            <h4 class="mb-1">Perfil</h4>
+            <div class="opacity-75 small">
+              Administra los datos del perfil de usuario.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BODY -->
+      <div class="perfil-body">
+        <form class="row g-3" id="formPerfil">
+
+          <!-- EMPRESA -->
+          <div class="col-12">
+            <div class="seccion-titulo">Datos de la empresa</div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="empresa">Nombre empresa</label>
+            <input type="text" class="form-control" id="empresa" placeholder="Ej: Constructora Andes" required />
+          </div>
+
+          <div class="col-12 col-md-3">
+            <label class="form-label" for="rut">RUT</label>
+            <input type="text" class="form-control" id="rut" placeholder="76.123.456-7" required />
+            <div class="form-text">Formato sugerido: 12.345.678-9</div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <label class="form-label" for="giro">Giro (opcional)</label>
+            <input type="text" class="form-control" id="giro" placeholder="Ej: Construcción" />
+          </div>
+
+          <!-- CONTACTO -->
+          <div class="col-12 mt-2">
+            <div class="seccion-titulo">Contacto principal</div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="usuario">Nombre usuario</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Ej: Alexander Aguilera" required />
+          </div>
+
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="correo">Correo</label>
+            <input type="email" class="form-control" id="correo" placeholder="nombre@empresa.cl" required />
+          </div>
+
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="telefono">Celular / Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="+56 9 1234 5678" required />
+          </div>
+
+          <!-- DIRECCIÓN -->
+          <div class="col-12 mt-2">
+            <div class="seccion-titulo">Dirección</div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="direccion">Dirección</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Ej: PANAMERICANA NORTE" required />
+          </div>
+
+          <div class="col-12 col-md-3">
+            <label class="form-label" for="ciudad">Ciudad</label>
+            <select class="form-select" id="ciudad" required>
+              <option selected disabled value="">Selecciona…</option>
+              <option>Santiago</option>
+              <option>Valparaíso</option>
+              <option>Concepción</option>
+              <option>Antofagasta</option>
+              <option>Otra</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <label class="form-label" for="comuna">Comuna (opcional)</label>
+            <input type="text" class="form-control" id="comuna" placeholder="Ej: Las Condes" />
+          </div>
+
+
+ 
+
+          <!-- ACCIONES -->
+          <div class="col-12 d-flex flex-wrap gap-2 justify-content-end mt-3">
+              <button type="submit" class="btn btn-primary">Guardar cambios</button>
+              <button type="button" class="btn btn-outline-secondary" id="btnCancelar">Cancelar</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER (tu mismo footer) -->
+  <footer class="footer-marcas mt-auto">
+    <div class="container">
+      <div class="marcas-container">
+        <div class="marcas-track">
+          <img src="../assets/img/JanssenMAQPNG.png" alt="">
+          <img src="../assets/img/580SV_2.jpg" alt="">
+          <img src="../assets/img/821G.jpg" alt="">
+          <img src="../assets/img/SR210B.jpg" alt="">
+          <img src="../assets/img/JanssenMAQ.png" alt="">
+
+          <img src="../assets/img/JanssenMAQPNG.png" alt="">
+          <img src="../assets/img/580SV_2.jpg" alt="">
+          <img src="../assets/img/821G.jpg" alt="">
+          <img src="../assets/img/SR210B.jpg" alt="">
+          <img src="../assets/img/JanssenMAQ.png" alt="">
+        </div>
+      </div>
+
+      <div class="footer-text text-center">
+ALEXANDER AGUILERA · Todos los derechos reservados           </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS del perfil -->
+  <script src="../js/perfil.js"></script>
+</body>
+</html>

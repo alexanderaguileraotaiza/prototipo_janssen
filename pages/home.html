@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Janssen Maquinaria | Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="../assets/img/Janssen MAQ.png" class="login-logo" alt="Janssen Maquinaria">
+
+            <a class="navbar-brand d-flex align-items-center" href="home.html">Janssen Maquinarias</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="maquinarias.html">Maquinarias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mantencion.html">Solicitud Mantención</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="repuestos.html">Repuestos</a>
+                    </li>
+                </ul>
+
+                <span class="navbar-text text-white">
+                    Constructora Andes | 76.123.456-7
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- CONTENIDO -->
+    <div class="container mt-4">
+
+        <h4 class="mb-4">Bienvenido</h4>
+
+        <div class="row g-4">
+
+            <!-- CARD MAQUINARIAS -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Maquinarias</h5>
+                        <p class="card-text">
+                            Visualiza tus maquinarias registradas, fichas técnicas y manuales.
+                        </p>
+                        <a href="maquinarias.html" class="btn btn-primary">
+                            Ver Maquinarias
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD MANTENCIÓN -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Solicitud de Mantención</h5>
+                        <p class="card-text">
+                            Agenda mantenciones técnicas para tus equipos.
+                        </p>
+                        <a href="mantencion.html" class="btn btn-primary">
+                            Agendar Mantención
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD REPUESTOS -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Repuestos</h5>
+                        <p class="card-text">
+                            Accede al catálogo de repuestos y compra en línea.
+                        </p>
+                        <a href="repuestos.html" class="btn btn-primary">
+                            Ver Repuestos
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+   <!-- CAROUSEL -->
+<div id="carouselExampleCaptions"
+     class="carousel slide carrusel-personal container text-center"
+     data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+
+    <button type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+
+    <button type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/img/580SV_2.jpg" class="d-block w-100 img-carrusel" alt="Mantención">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Mantén tus equipos operativos</h5>
+        <p>Agenda tu mantención técnica a tiempo.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="../assets/img/580SV_2.jpg" class="d-block w-100 img-carrusel" alt="Repuestos">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Repuestos originales</h5>
+        <p>Compra repuestos certificados Janssen.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="../assets/img/580SV_2.jpg" class="d-block w-100 img-carrusel" alt="Soporte">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Soporte especializado</h5>
+        <p>Nuestros ejecutivos te acompañan en todo momento.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+    <br>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- FOOTER -->
+    <footer class="footer-marcas mt-5">
+        <div class="marcas-container">
+            <div class="marcas-track">
+
+                <img src="../assets/img/JanssenMAQPNG.png" alt="Janssen">
+                <img src="../assets/img/580SV_2.jpg" alt="Marca 1">
+                <img src="../assets/img/821G.jpg" alt="Marca 2">
+                <img src="../assets/img/SR210B.jpg" alt="Marca 3">
+                <img src="../assets/img/JanssenMAQ.png" alt="Marca 4">
+
+                <!-- duplicado para efecto infinito -->
+                <img src="../assets/img/JanssenMAQPNG.png" alt="Janssen">
+                <img src="../assets/img/580SV_2.jpg" alt="Marca 1">
+                <img src="../assets/img/821G.jpg" alt="Marca 2">
+                <img src="../assets/img/SR210B.jpg" alt="Marca 3">
+                <img src="../assets/img/JanssenMAQ.png" alt="Marca 4">
+
+            </div>
+        </div>
+
+        <div class="footer-text">
+            ALEXANDER AGUILERA · Todos los derechos reservados
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
