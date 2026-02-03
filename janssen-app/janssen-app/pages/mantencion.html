@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Janssen Maquinaria | Solicitud de Mantención</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <img src="../assets/img/Janssen MAQ.png" class="login-logo" alt="Janssen Maquinaria">
+
+        <a class="navbar-brand d-flex align-items-center" href="home.html">Janssen Maquinarias</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+                <li class="nav-item">
+                    <a class="nav-link " href="perfil.html">Perfil</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="maquinarias.html">Maquinarias</a></li>
+                <li class="nav-item"><a class="nav-link active" href="mantencion.html">Solicitud Mantención</a></li>
+                <li class="nav-item"><a class="nav-link" href="repuestos.html">Repuestos</a></li>
+            </ul>
+
+            <span class="navbar-text text-white">
+                Constructora Andes | 76.123.456-7
+            </span>
+        </div>
+
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main class="flex-fill">
+    <div class="container mt-4">
+
+        <h4 class="mb-4">Solicitud de Mantención</h4>
+
+        <form class="row g-3 needs-validation" novalidate>
+
+            <!-- MAQUINARIA -->
+            <div class="col-md-6">
+                <label class="form-label">Maquinaria</label>
+                <select class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>Janssen 580SV</option>
+                    <option>Janssen 821G</option>
+                </select>
+                <div class="invalid-feedback">
+                    Debe seleccionar una maquinaria.
+                </div>
+            </div>
+
+            <!-- HORAS -->
+            <div class="col-md-6">
+                <label class="form-label">Horas de operación</label>
+                <input type="number" class="form-control" placeholder="Ej: 4000" required>
+                <div class="invalid-feedback">
+                    Ingrese horas de operación.
+                </div>
+            </div>
+
+            <!-- TIPO -->
+            <div class="col-md-6">
+                <label class="form-label">Tipo de mantención</label>
+                <select class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>Primera mantención (4000 horas)</option>
+                    <option>Mantención preventiva</option>
+                    <option>Mantención correctiva</option>
+                </select>
+                <div class="invalid-feedback">
+                    Seleccione un tipo de mantención.
+                </div>
+            </div>
+
+            <!-- SUCURSAL -->
+            <div class="col-md-6">
+                <label class="form-label">Sucursal</label>
+                <select class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>Antofagasta</option>
+                    <option>Santiago</option>
+                    <option>Concepción</option>
+                    <option>Temuco</option>
+                    <option>Osorno</option>
+                </select>
+                <div class="invalid-feedback">
+                    Seleccione una sucursal.
+                </div>
+            </div>
+
+            <!-- FECHA -->
+            <div class="col-md-6">
+                <label class="form-label">Fecha preferida</label>
+                <input type="date" class="form-control" required>
+                <div class="invalid-feedback">
+                    Seleccione una fecha.
+                </div>
+            </div>
+
+            <!-- OBSERVACIONES -->
+            <div class="col-12">
+                <label class="form-label">Observaciones (opcional)</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+
+            <!-- BOTÓN -->
+            <div class="col-12 d-grid mt-3">
+                <button class="btn btn-danger" type="submit">
+                    Agendar Mantención
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer-marcas mt-auto">
+    <div class="container">
+
+        <div class="marcas-container">
+            <div class="marcas-track">
+                <img src="../assets/img/JanssenMAQPNG.png">
+                <img src="../assets/img/580SV_2.jpg">
+                <img src="../assets/img/821G.jpg">
+                <img src="../assets/img/SR210B.jpg">
+                <img src="../assets/img/JanssenMAQ.png">
+
+                <img src="../assets/img/JanssenMAQPNG.png">
+                <img src="../assets/img/580SV_2.jpg">
+                <img src="../assets/img/821G.jpg">
+                <img src="../assets/img/SR210B.jpg">
+                <img src="../assets/img/JanssenMAQ.png">
+            </div>
+        </div>
+
+        <div class="footer-text text-center">
+ALEXANDER AGUILERA · Todos los derechos reservados       
+
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      } else {
+        event.preventDefault()
+        window.location.href = "confirmacion.html"
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+</body>
+</html>
